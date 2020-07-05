@@ -1,0 +1,108 @@
+<view class="bg">
+  <view class="button_area"></view>
+  <text class="text_area">举报野生动物相关非法行为</text>
+  <text class="text_little">我们重视每一份举报\n平均一天内收到反馈</text>
+  <button class="shadow">
+  <text class="text_button1">我要举报</text>
+  <text class="text_button2">身边的野生动物非法行为</text>
+  </button>
+  <view class="text">
+    <text class="text_common">大家已经在咕咕举报守护了</text>
+    <text class="text_number">881</text>
+    <text class="text_common">只野生动物</text>
+  </view>
+  <view class='fenlei'>
+    <navigator url='../books/books' class='navi navi-fujin'>
+      <view class='leibie fenlei-fujin'>
+        <image src='../../src/index/search.png'></image>
+        <view>附近野生动物</view>
+      </view>
+    </navigator>
+    <navigator url='../makeup/makeup' class='navi navi-jianzhi'>
+      <view class='leibie fenlei-jianzhi'>
+        <image src='../../src/index/search.png'></image>
+        <view>我的守护记录</view>
+      </view>
+    </navigator>
+    <navigator url='../daily/daily' class='navi navi-jishou'>
+      <view class='leibie fenlei-jishou'>
+        <image src='../../src/index/search.png'></image>
+        <view>查询是否违法</view>
+      </view>
+    </navigator>
+  </view>
+  <image class="bg_img" src='../../src/index/_20.png'></image>
+</view>
+<view class="list_box" bindtap="detail" data-id="{{item._id}}">
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/index/_22@2x.png"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title">城市生态保护手记
+        </view>
+        <view class="list_summary">这个月城市的野生动物又活跃了起来呢！看看我们的新发现！
+        </view>
+      </view>
+      <view class="list_between">
+        <view class="list_time">昨天 12:00</view>
+      </view>
+    </view>
+  </view>
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/index/_23.png"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title">咕咕举报守护月报
+        </view>
+        <view class="list_summary">这个月城市的野生动物又活跃了起来呢！看看我们的新发现！
+        </view>
+      </view>
+      <view class="list_between">
+        <view class="list_time">今天 10:00</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="list_word padding">
+        <view class="list_title">野生动物守护伙伴
+        </view>
+        <view class="list_summary">我们守护您的安全
+        </view>
+      </view>
+<view class='block_flex'>
+      <view class='constitute'>
+        <image src='../../src/index/_49.png'></image>
+        <view>上海市人民政府</view>
+      </view>
+      <view class='constitute'>
+        <image src='../../src/index/_50.png'></image>
+        <view>市公安局</view>
+      </view>
+      <view class='constitute'>
+        <image src='../../src/index/_51.png'></image>
+        <view>市林草局</view>
+      </view>
+      <view class='constitute'>
+        <image src='../../src/index/search.png'></image>
+        <view>区野保站</view>
+      </view>
+  </view>
+  <view class='block_flex'>
+      <view class='constitute'>
+        <image src='../../src/index/_48.png'></image>
+        <view>同济大学</view>
+      </view>
+      <view class='constitute'>
+        <image src='../../src/index/_47.png'></image>
+        <view>山水自然NGO</view>
+      </view>
+      <view class='constitute'>
+        <image src='../../src/index/_44.png'></image>
+        <view>WWF中国</view>
+      </view>
+      <view class='constitute'>
+        <image src='../../src/index/_44.png'></image>
+        <view>腾讯110</view>
+      </view>
+  </view>
