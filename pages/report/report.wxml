@@ -1,0 +1,22 @@
+<van-steps steps="{{ steps }}" active="{{ active }}" />
+<view class="a_container">
+<text class="text_title">线上</text>
+</view>
+<view class="bottom_box">
+      <view class="bottom_card" bindtap="go" data-go="/pages/feedback/feedback" data-status="1">
+                  <image src="../../src/index/search.png"></image>
+                  <view>问题反馈</view>
+            <image src="/images/go.png"></image>
+            
+      </view>
+      <view class="bottom_card" bindtap="showShare">
+                  <image src="../../src/index/search.png"></image>
+                  <view>好用分享</view>
+            <image src="/images/go.png"></image>
+      </view>
+      <view class="bottom_card" bindtap="go" data-go="/pages/about/about">
+                  <image src="../../src/index/search.png"></image>
+                  <view>关于程序</view>
+            <image src="/images/go.png"></image>
+      </view>
+</view>
