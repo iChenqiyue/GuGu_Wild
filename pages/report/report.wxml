@@ -1,22 +1,51 @@
-<van-steps steps="{{ steps }}" active="{{ active }}" />
+<van-steps steps="{{ steps }}" active="{{ active }}" active-color="rgb(87,135,242)" />
 <view class="a_container">
-<text class="text_title">线上</text>
+  <view class="text">
+    <text class="text_title">线下</text>
+    <text class="text_link">查看常见线下违法行为</text>
+  </view>
+  <view class="kind_box ">
+    <view class="kind_card " bindtap="go " data-go="/pages/feedback/feedback " data-status="1 ">
+      <image src="../../src/index/search.png "></image>
+      <view>野生动物交易</view>
+      <image class="icon " src="../../src/report/go.png "></image>
+    </view>
+    <view class="kind_card " bindtap="showShare ">
+      <image src="../../src/index/search.png "></image>
+      <view>非法捕猎行为</view>
+      <image class="icon " src="../../src/report/go.png "></image>
+    </view>
+  </view>
 </view>
-<view class="bottom_box">
-      <view class="bottom_card" bindtap="go" data-go="/pages/feedback/feedback" data-status="1">
-                  <image src="../../src/index/search.png"></image>
-                  <view>问题反馈</view>
-            <image src="/images/go.png"></image>
-            
-      </view>
-      <view class="bottom_card" bindtap="showShare">
-                  <image src="../../src/index/search.png"></image>
-                  <view>好用分享</view>
-            <image src="/images/go.png"></image>
-      </view>
-      <view class="bottom_card" bindtap="go" data-go="/pages/about/about">
-                  <image src="../../src/index/search.png"></image>
-                  <view>关于程序</view>
-            <image src="/images/go.png"></image>
-      </view>
+<view class="a_container ">
+  <view class="text">
+    <text class="text_title ">线上</text>
+  </view>
+  <view class="kind_box ">
+    <view class="kind_card " bindtap="showShare ">
+      <image src="../../src/index/search.png "></image>
+      <view>线上非法信息</view>
+      <image class="icon " src="../../src/report/go.png "></image>
+    </view>
+  </view>
+</view>
+<view class="a_container ">
+  <view class="text">
+    <text class="text_title ">亲友？尝试劝导</text>
+  </view>
+  <view class="kind_box ">
+    <view class="kind_card " bindtap="go " data-go="/pages/feedback/feedback " data-status="1 ">
+      <image src="../../src/index/search.png "></image>
+      <view>劝导指南</view>
+      <image class="icon " src="../../src/report/go.png "></image>
+    </view>
+  </view>
+</view>
+<view class="text_bottom">
+  <image src="../../src/report/go.png "></image>
+  <text>不在以上分类中？</text>
+</view>
+<view class="text_bottom">
+  <image src="../../src/report/go.png "></image>
+  <text>请您对举报内容的真实性负责\n我们也必将认真处理收集到的举报内容</text>
 </view>

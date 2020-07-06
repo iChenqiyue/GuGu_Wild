@@ -61,6 +61,13 @@
 					"id": -1,
 					"name": "report",
 					"pathName": "pages/report/report",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "offline",
+					"pathName": "pages/offline/offline",
 					"scene": null
 				}
 			]

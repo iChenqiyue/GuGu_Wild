@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/report/report"
+    "pages/report/report",
+    "pages/offline/offline"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,6 +14,7 @@
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "van-panel": "miniprogram_npm/@vant/weapp/panel/index",
-    "van-steps": "miniprogram_npm/@vant/weapp/steps/index"
+    "van-steps": "miniprogram_npm/@vant/weapp/steps/index",
+    "van-icon": "miniprogram_npm/@vant/weapp/icon/index"
   }
 }
