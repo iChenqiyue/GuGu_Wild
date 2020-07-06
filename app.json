@@ -15,6 +15,7 @@
   "usingComponents": {
     "van-panel": "miniprogram_npm/@vant/weapp/panel/index",
     "van-steps": "miniprogram_npm/@vant/weapp/steps/index",
-    "van-icon": "miniprogram_npm/@vant/weapp/icon/index"
+    "van-icon": "miniprogram_npm/@vant/weapp/icon/index",
+    "van-transition": "miniprogram_npm/@vant/weapp/transition/index"
   }
 }

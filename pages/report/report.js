@@ -1,10 +1,9 @@
-// pages/report/report.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    entime: {
+      enter: 600,
+      leave: 300
+    }, //进入褪出动画时长
     steps: [
       {
         text: '步骤一',
@@ -26,60 +25,80 @@ Page({
       },
     ],
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  initial() {
+    let that = this;
+    that.setData({
+      show_a:true,
+      show_off1: false,
+      show_off2: false,
+      show_on: false,
+      show_c:false,
+      active:0
+    })
+  },
+  onLoad() {
+    this.initial();
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  go(e) {
+    let that = this;
+    var type = e.currentTarget.dataset.type;
+    console.log(e.currentTarget.dataset.type);
+    if ( type == "offline1" || type=="offline2") {
+      that.setData({
+        show_a:false,
+        show_off1: true,
+        show_off2: false,
+        show_on: false,
+        show_c: false,
+        active:1
+      })
+    }
+    else if (type == "online"){
+      that.setData({
+        show_a: false,
+        show_off1: false,
+        show_off2: false,
+        show_on: true,
+        show_c: false,
+        active: 1
+      })
+    }
+    else{}
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  change_step(e){
+    let that=this;
+    if(that.data.active==1&&e.detail==0){
+      that.setData({
+        active:0,
+        show_a: true,
+        show_off1: false,
+        show_off2: false,
+        show_on: false,
+        show_c: false,
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  submit(){
+    let that=this;
+    that.setData({
+      active: 2,
+      show_a: false,
+      show_off1: false,
+      show_off2: false,
+      show_on: false,
+      show_c: true,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  finish(){
+    let that=this;
+    that.setData({
+      active: 0,
+      show_a: true,
+      show_off1: false,
+      show_off2: false,
+      show_on: false,
+      show_c: false,
+    })
   }
 })

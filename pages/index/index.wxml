@@ -2,7 +2,7 @@
   <view class="button_area"></view>
   <text class="text_area">举报野生动物相关非法行为</text>
   <text class="text_little">我们重视每一份举报\n平均一天内收到反馈</text>
-  <button class="shadow">
+  <button class="shadow" bindtap="go" data-page="../report/report">
   <text class="text_button1">我要举报</text>
   <text class="text_button2">身边的野生动物非法行为</text>
   </button>

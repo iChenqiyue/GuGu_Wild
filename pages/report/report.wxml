@@ -1,51 +1,140 @@
-<van-steps steps="{{ steps }}" active="{{ active }}" active-color="rgb(87,135,242)" />
-<view class="a_container">
-  <view class="text">
-    <text class="text_title">线下</text>
-    <text class="text_link">查看常见线下违法行为</text>
-  </view>
-  <view class="kind_box ">
-    <view class="kind_card " bindtap="go " data-go="/pages/feedback/feedback " data-status="1 ">
-      <image src="../../src/index/search.png "></image>
-      <view>野生动物交易</view>
-      <image class="icon " src="../../src/report/go.png "></image>
+<van-steps steps="{{ steps }}" active="{{ active }}" active-color="rgb(87,135,242)" bind:click-step="change_step" />
+<van-transition show="{{ show_a }}" name="fade-right" custom-class="block" duration="{{entime}}">
+  <view class="a_container">
+    <view class="text">
+      <text class="text_title">线下</text>
+      <text class="text_link">查看常见线下违法行为</text>
     </view>
-    <view class="kind_card " bindtap="showShare ">
-      <image src="../../src/index/search.png "></image>
-      <view>非法捕猎行为</view>
-      <image class="icon " src="../../src/report/go.png "></image>
-    </view>
-  </view>
-</view>
-<view class="a_container ">
-  <view class="text">
-    <text class="text_title ">线上</text>
-  </view>
-  <view class="kind_box ">
-    <view class="kind_card " bindtap="showShare ">
-      <image src="../../src/index/search.png "></image>
-      <view>线上非法信息</view>
-      <image class="icon " src="../../src/report/go.png "></image>
+    <view class="kind_box ">
+      <view class="kind_card " bindtap="go" data-type="offline1">
+        <image src="../../src/index/search.png "></image>
+        <view>野生动物交易</view>
+        <image class="icon " src="../../src/report/go.png "></image>
+      </view>
+      <view class="kind_card " bindtap="go" data-type="offline2">
+        <image src="../../src/index/search.png "></image>
+        <view>非法捕猎行为</view>
+        <image class="icon " src="../../src/report/go.png "></image>
+      </view>
     </view>
   </view>
-</view>
-<view class="a_container ">
-  <view class="text">
-    <text class="text_title ">亲友？尝试劝导</text>
-  </view>
-  <view class="kind_box ">
-    <view class="kind_card " bindtap="go " data-go="/pages/feedback/feedback " data-status="1 ">
-      <image src="../../src/index/search.png "></image>
-      <view>劝导指南</view>
-      <image class="icon " src="../../src/report/go.png "></image>
+  <view class="a_container ">
+    <view class="text">
+      <text class="text_title ">线上</text>
+    </view>
+    <view class="kind_box ">
+      <view class="kind_card " bindtap="go" data-type="online">
+        <image src="../../src/index/search.png "></image>
+        <view>线上非法信息</view>
+        <image class="icon " src="../../src/report/go.png "></image>
+      </view>
     </view>
   </view>
-</view>
-<view class="text_bottom">
-  <image src="../../src/report/go.png "></image>
-  <text>不在以上分类中？</text>
-</view>
-<view class="text_bottom">
-  <image src="../../src/report/go.png "></image>
-  <text>请您对举报内容的真实性负责\n我们也必将认真处理收集到的举报内容</text>
-</view>
+  <view class="a_container ">
+    <view class="text">
+      <text class="text_title ">亲友？尝试劝导</text>
+    </view>
+    <view class="kind_box ">
+      <view class="kind_card " bindtap="go " data-go="/pages/feedback/feedback " data-status="1 ">
+        <image src="../../src/index/search.png "></image>
+        <view>劝导指南</view>
+        <image class="icon " src="../../src/report/go.png "></image>
+      </view>
+    </view>
+  </view>
+  <view class="text_bottom">
+    <image src="../../src/report/go.png "></image>
+    <text>不在以上分类中？</text>
+  </view>
+  <view class="text_bottom">
+    <image src="../../src/report/go.png "></image>
+    <text>请您对举报内容的真实性负责\n我们也必将认真处理收集到的举报内容</text>
+  </view>
+</van-transition>
+
+<van-transition show="{{ show_off1 }}" name="fade-right" custom-class="block" duration="{{entime}}">
+  <view class="container">
+    <view class="off_des">
+      <input placeholder="* 简单描述（涉及野生动物种类、规模等）" />
+    </view>
+    <view class="off_loc">
+      <input placeholder="* 位置" />
+      <view class="get_loc">
+        <image src="../../src/index/search.png" />
+        <view>获取定位</view>
+      </view>
+    </view>
+    <view class="proof">
+      <view class="proof_text">
+        <text class="proof_title">相关证据（选填）</text>
+        <text class="proof_example">示例</text>
+      </view>
+      <view class='block_flex'>
+        <view class='constitute'>
+          <image src='../../src/index/_48.png'></image>
+          <view>拍照</view>
+        </view>
+        <view class='constitute'>
+          <image src='../../src/index/_47.png'></image>
+          <view>上传图片</view>
+        </view>
+        <view class='constitute'>
+          <image src='../../src/index/_44.png'></image>
+          <view>上传录音</view>
+        </view>
+      </view>
+    </view>
+    <button class="shadow" bindtap="submit">提交</button>
+  </view>
+  <view class="text_bottom">
+    <image src="../../src/report/go.png "></image>
+    <text>请您对举报内容的真实性负责\n我们也必将认真处理收集到的举报内容</text>
+  </view>
+</van-transition>
+
+<van-transition show="{{ show_on }}" name="fade-right" custom-class="block" duration="{{entime}}">
+  <view class="container">
+    <view class="off_des">
+      <input placeholder="* 所属平台" />
+    </view>
+    <view class="off_des">
+      <input placeholder="* 可搜索到的账号ID" />
+    </view>
+    <view class="off_des">
+      <input placeholder="* 简单描述（涉及野生动物种类、规模等）" />
+    </view>
+    <view class="proof">
+      <view class="proof_text">
+        <text class="proof_title">相关证据（选填）</text>
+        <text class="proof_example">示例</text>
+      </view>
+      <view class='block_flex'>
+        <view class='constitute'>
+          <image src='../../src/index/_48.png'></image>
+          <view>聊天记录/违规信息等证据截图</view>
+        </view>
+        <view class='constitute'>
+          <image src='../../src/index/_47.png'></image>
+          <view>账号详情截图</view>
+        </view>
+      </view>
+    </view>
+    <button class="shadow" bindtap="submit">提交</button>
+  </view>
+  <view class="text_bottom">
+    <image src="../../src/report/go.png "></image>
+    <text>请您对举报内容的真实性负责\n我们也必将认真处理收集到的举报内容</text>
+  </view>
+</van-transition>
+
+<van-transition show="{{ show_c }}" name="fade-right" custom-class="block" duration="{{entime}}">
+  <view class="c_text">
+    <text class="c_text_title">获得一张守护券</text>
+    <text class="c_text_des">可在首页「守护记录」中\n查看处理进度</text>
+  </view>
+  <view class="c_card">
+  </view>
+  <view class="c_finish">
+    <button class="shadow" bindtap="finish">完成</button>
+  </view>
+</van-transition>
