@@ -1,0 +1,21 @@
+
+
+  <view class="a_container">
+    <view class="text">
+
+ 
+    </view>
+    <view class="kind_box ">
+      <view class="kind_card " bindtap="go" data-type="offline1">
+        <image src="../../src/report/1.bmp "></image>
+        <view>法律条文保护</view>
+        <image class="icon " src="../../src/report/go.png "></image>
+      </view>
+      <view class="kind_card " bindtap="go" data-type="offline2">
+        <image src="../../src/report/2.bmp "></image>
+        <view>相关部门热线</view>
+        <image class="icon " src="../../src/report/go.png "></image>
+      </view>
+    </view>
+  </view>
+

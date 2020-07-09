@@ -1,0 +1,254 @@
+/**index.wxss**/
+
+/*list*/
+.list_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin-top: 300rpx;
+  background-color:rgb(213, 226, 253);
+  flex-direction: column;
+}
+/*list*/
+.list_box .jilu {
+ margin-left:-480rpx;
+ color:rgb(0, 195, 255);
+}
+.list_box1 .jilu {
+  margin-left:-550rpx;
+  color: rgb(0, 195, 255);
+ }
+.list_poster {
+  padding: 20rpx;
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.list_content {
+  background-color:white;
+  height: 230rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius:5px;
+  position: relative;
+  margin-bottom:20rpx;
+}
+.list_right{
+  position: absolute;
+  height: 230rpx;
+  left:300rpx;
+  width: calc(100% - 300rpx);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list_word {
+  padding-top:20rpx;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.list_title {
+  width: 100%;
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
+  line-height: 45rpx;
+}
+
+.list_summary {
+  padding-top: -35rpx;
+  width: 100%;
+  font-size: 26rpx;
+  letter-spacing: 3rpx;
+  line-height: 40rpx;
+  color: rgb(129, 129, 129);
+}
+.list_situation {
+  margin-left:250rpx;
+  padding-top: 15rpx;
+  width: 100%;
+  font-size: 36rpx;
+  letter-spacing: 3rpx;
+  line-height: 40rpx;
+  color:gold;
+}
+.list_situation1 {
+  margin-left:250rpx;
+  padding-top: -180rpx;
+  width: 100%;
+  font-size: 36rpx;
+  letter-spacing: 3rpx;
+  color:gold;
+}
+.list_situation2 {
+  margin-left:250rpx;
+  margin-top: -15rpx;
+  width: 100%;
+  font-size: 26rpx;
+  letter-spacing: 3rpx;
+
+  color:gold;
+}
+.list_situation3 {
+  margin-left:250rpx;
+  padding-top: 15rpx;
+  width: 100%;
+  font-size: 20rpx;
+  letter-spacing: 3rpx;
+  color:grey;
+}
+
+
+.list_between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 15rpx;
+}
+
+
+.list_time {
+  font-size: 22rpx;
+  letter-spacing: 2rpx;
+  color: rgb(129, 129, 129);
+}
+.list_box1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+
+  background-color:rgb(213, 226, 253);
+  flex-direction: column;
+}
+/*background*/
+.bg{
+position:relative;
+height:250rpx;
+}
+.bg_img{
+ margin-top: -400rpx;
+  margin-left: 23rpx;
+width: 95%;
+height:180%;
+position: absolute;
+z-index:-1;
+}
+.bg_profile{
+height: 130rpx;
+width: 130rpx;
+margin-top:100rpx;
+margin-left:130rpx;
+position: absolute;
+
+}
+
+
+
+.text_button1{
+font-size: 32rpx;
+font-weight: 1000;
+}
+.text_button2{
+font-size: 20rpx;
+margin-top:-20rpx;
+}
+
+/*左上角字体*/
+.text_area{
+padding-top:100rpx;
+padding-left:350rpx;
+color:blue;
+display: flex;
+font-size: 30rpx;
+}
+.text_little{
+padding-left:350rpx;
+padding-top:10rpx;
+color:blue;
+display: flex;
+font-size: 70rpx;
+}
+
+
+/*button*/
+.button_area{
+position:absolute;
+width:100%;
+display:flex;
+justify-content: center;
+flex-direction: column;
+padding-top:800rpx;
+z-index: -1;
+background-color:rgb(150, 183, 253);
+
+}
+.text{
+margin-top:25rpx;
+color:rgb(93, 140, 241);
+justify-content: center;
+align-items: center;
+font-weight: 1000;
+vertical-align: middle;
+display:flex;
+}
+.text .text_common{
+font-size: 32rpx;
+vertical-align: middle;
+}
+
+/* 三项跳转 */
+.fenlei {
+margin-top:0rpx;
+display: flex;
+justify-content: space-around;
+width: 100%;
+height: 190rpx;
+}
+.fenlei .num{
+  font-size:48rpx;
+  vertical-align: middle;
+  color:gold;
+  }
+.fenlei .navi {
+flex-grow: 1;
+width: 50rpx;/*此处无效，但是必须存在*/
+}
+.leibie {
+margin-top: 18rpx;
+width: 100%;
+height: 70%;
+text-align: center;
+}
+.leibie image {
+margin: auto 0rpx;
+width: 100rpx;
+height: 100rpx;
+border-radius: 50%;
+margin-top: 10rpx;
+}
+
+.leibie view{
+font-size: 24rpx;
+color: rgb(93, 140, 241);
+margin-top: -2rpx;
+font-weight: 1000;
+}
+
+.padding{
+padding-left:50rpx;
+}
+.font_bottom{
+color:black;
+font-weight: 100;
+}

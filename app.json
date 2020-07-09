@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/report/report",
-    "pages/offline/offline"
+    "pages/daily/daily",
+    "pages/makeup/makeup",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",

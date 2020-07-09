@@ -1,0 +1,106 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class="block">
+    <view class="block_mine">
+      <view class="block_img">
+        <view class="block_change">
+          <text class="block_text">编辑个人资料</text>
+        </view>
+      </view>
+      <text class="block_name">野生动物守护员</text>
+    </view>
+    <view class='block_flex'>
+      <view class="block_fuc">
+        <view class='constitute'>
+          <image src='../../src/index/_48.png'></image>
+          <text>6</text>
+        </view>
+        <view>我的守护记录</view>
+      </view>
+      <view class="block_fuc">
+        <view class='constitute'>
+          <image src='../../src/index/_47.png'></image>
+          <text>6</text>
+        </view>
+        <view>我的奖励</view>
+      </view>
+      <view class="block_fuc">
+        <view class='constitute'>
+          <image src='../../src/index/_44.png'></image>
+          <text>6</text>
+        </view>
+        <view>我的照片分享</view>
+      </view>
+      <view class="block_fuc">
+        <view class='constitute'>
+          <image src='../../src/index/_44.png'></image>
+          <text>6</text>
+        </view>
+        <view>我的积分</view>
+      </view>
+    </view>
+  </view>
+  <text class="text_title">我的守护记录</text>
+  <view class="block">
+    <view class="list_content">
+      <image lazy-load class="list_poster" src="../../src/index/_22@2x.png"></image>
+      <view class="list_right">
+        <view class="list_word">
+          <view class="list_title_all">
+            <view class="list_title">野生动物交易</view>
+            <view class="list_title_after">出警取证中</view>
+          </view>
+          <view class="list_summary_all">
+            <view class="list_summary">贩卖玳瑁制品</view>
+            <view class="list_summary_after">杨浦公安</view>
+          </view>
+          <view class="list_summary">2020.6.10｜210积分
+          </view>
+          <text class="list_time">更新时间：今天 10:30</text>
+        </view>
+      </view>
+      <view class="list_line" />
+    </view>
+    <view class="list_content">
+      <image lazy-load class="list_poster" src="../../src/index/_22@2x.png"></image>
+      <view class="list_right">
+        <view class="list_word">
+          <view class="list_title_all">
+            <view class="list_title">野生动物交易</view>
+            <view class="list_title_after">出警取证中</view>
+          </view>
+          <view class="list_summary_all">
+            <view class="list_summary">贩卖玳瑁制品</view>
+            <view class="list_summary_after">杨浦公安</view>
+          </view>
+          <view class="list_summary">2020.6.10｜210积分
+          </view>
+          <text class="list_time">更新时间：今天 10:30</text>
+        </view>
+      </view>
+      <view class="list_line" />
+    </view>
+  </view>
+  <text class="text_title">我的奖励</text>
+<view class="block">
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/index/_22@2x.png"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title_all">
+          <view class="list_title">"世界海洋日"水族馆参观邀请</view>
+        </view>
+        <view class="list_summary_all">
+          <view class="list_summary">时间：2020年7月1日</view>
+        </view>
+        <view class="list_summary_all">
+        <view class="list_summary">地点：杨浦区野保站</view>
+        <view class="list_summary_after">已参加</view>
+      </view>
+    </view>
+  </view>
+  <view class="list_line" />
+</view>
+</view>
+</view>
+

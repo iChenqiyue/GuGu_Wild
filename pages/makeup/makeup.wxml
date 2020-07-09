@@ -1,0 +1,106 @@
+<view class="bg">
+  <view class="button_area"></view>
+  <image class="bg_profile" src='../../src/report/1.jpg'></image>
+  <text class="text_area">野生动物守护员</text>
+  <text class="text_little">赵小明</text>
+
+
+  <view class='fenlei'>
+    <navigator url='../books/books' class='navi navi-fujin'>
+      <view class='leibie fenlei-fujin'>
+        <image src='../../src/index/search.png'></image>
+        <view>守护记录</view>
+        <view class="num">8</view>
+      </view>
+    </navigator>
+    <navigator url='../makeup/makeup' class='navi navi-jianzhi'>
+      <view class='leibie fenlei-jianzhi'>
+        <image src='../../src/index/search.png'></image>
+        <view>我的奖励</view>
+        <view class="num">6</view>
+      </view>
+    </navigator>
+    <navigator url='../daily/daily' class='navi navi-jishou'>
+      <view class='leibie fenlei-jishou'>
+        <image src='../../src/index/search.png'></image>
+        <view>我的照片分享</view>
+        <view class="num">4</view>
+      </view>
+    </navigator>
+    <navigator url='../daily/daily' class='navi navi-jishou'>
+      <view class='leibie fenlei-jishou'>
+        <image src='../../src/index/search.png'></image>
+        <view>我的积分</view>
+        <view class="num">88</view>
+      </view>
+    </navigator>
+  </view>
+  <image class="bg_img" src='../../src/report/0.jpg'></image>
+</view>
+
+
+<view class="list_box" bindtap="detail" data-id="{{item._id}}">
+  <view class="jilu">我的守护记录</view>
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/index/"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title">野生动物交易</view>
+        <view class="list_situation1">出警取证</view>
+        <view class="list_summary">贩卖玳瑁制品
+        </view>
+        <view class="list_situation2">杨浦公安</view>
+      </view>
+      <view class="list_between">
+        <view class="list_time">2020年6月28日|20积分</view>
+      </view>
+    </view>
+  </view>
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/index/"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title">非法捕猎行为
+        </view>
+      </view>
+      <view class="list_situation1">救助动物</view>
+      <view class="list_summary">搭建捕鸟网
+
+        <view class="list_situation2">杨浦野保站</view>
+      </view>
+      <view class="list_between">
+        <view class="list_time">2020年5月18日|30积分</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="list_box1" bindtap="detail" data-id="{{item._id}}">
+  <view class="jilu">我的奖励</view>
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/report/2.jpg"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title">“世界海洋日”水族馆邀请
+        </view>
+        <view class="list_summary">时间：2020年7月1日 </view>
+
+        <view class="list_summary">地点：上海水族馆</view>
+        <view class="list_situation">✔已参加</view>
+      </view>
+    </view>
+  </view>
+  <view class="list_content">
+    <image lazy-load class="list_poster" src="../../src/report/3.jpg"></image>
+    <view class="list_right">
+      <view class="list_word">
+        <view class="list_title">杨浦野保站开放日邀请 </view>
+        <view class="list_summary">时间：2020年6月16日 </view>
+
+        <view class="list_summary">地点：杨浦区野保站</view>
+        <view class="list_situation">✔已参加</view>
+      </view>
+    </view>
+  </view>
+
+</view>

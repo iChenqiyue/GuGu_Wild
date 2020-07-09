@@ -18,7 +18,7 @@
         <view>附近野生动物</view>
       </view>
     </navigator>
-    <navigator url='../makeup/makeup' class='navi navi-jianzhi'>
+    <navigator url='../mine/mine' class='navi navi-jianzhi'>
       <view class='leibie fenlei-jianzhi'>
         <image src='../../src/index/search.png'></image>
         <view>我的守护记录</view>

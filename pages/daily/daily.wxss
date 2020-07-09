@@ -1,0 +1,258 @@
+/* pages/report/report.wxss */
+
+/*第一步*/
+.a_container{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+.text{
+  color:gray;
+  font-size: 24rpx;
+  padding-top:10rpx;
+  margin-bottom:10rpx;
+}
+.text .text_title{
+  padding-left:50rpx;
+}
+.text .text_link{
+  position:absolute;
+  right:50rpx;
+  color:rgb(87,135,242);
+}
+
+
+.kind_box {
+      width: 100%;
+      display: flex;
+      box-sizing: border-box;
+      padding: 0 40rpx;
+      flex-direction: column;
+      
+}
+
+.kind_card {
+      position: relative;
+      width: 100%;
+      height: 124rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1rpx solid #eee;
+      border-radius: 25rpx;
+      background-color:rgb(243,247,255);
+      margin-bottom:30rpx;
+}
+.kind_card button{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.01;
+}
+.kind_card image {
+      width: 50rpx;
+      height: 50rpx;
+      padding-left:80rpx;
+}
+.kind_card view{
+  text-align: center;
+}
+
+.kind_card .icon{
+  width: 25rpx;
+  height: 25rpx;
+  padding-right:40rpx;
+}
+
+
+.text_bottom{
+  justify-content: center;
+  text-align: center;
+  color:rgb(87,135,242);
+  font-size: 24rpx;
+  margin-top:50rpx;
+}
+.text_bottom image{
+  width:20rpx;
+  height:20rpx;
+}
+
+.text_bottom .tips{
+  color:black;
+}
+
+/*第二步*/
+/*线下*/
+
+.container {
+      padding: 32rpx;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      box-sizing: border-box;
+      background: #f8fafd;
+      box-shadow: 0 30rpx 20rpx rgb(240, 240, 240);
+}
+
+.off_des {
+      width: 100%;
+      height: 76rpx;
+      background: white;
+      display: flex;
+      overflow: hidden;
+      border-radius: 10rpx;
+      margin-bottom: 40rpx;
+}
+
+.off_des input {
+      padding-left:20rpx;
+      width: 100%;
+      font-size: 28rpx;
+      color: #aaaaab;
+      height: 100%;
+}
+
+.off_loc {
+      width: 100%;
+      height: 76rpx;
+      background: white;
+      display: flex;
+      overflow: hidden;
+      border-radius: 10rpx;
+      margin-bottom: 40rpx;
+}
+
+.off_loc input {
+      padding-left:20rpx;
+      width: 90%;
+      font-size: 28rpx;
+      color: #aaaaab;
+      height: 100%;
+}
+.off_loc image {
+  margin: auto 0rpx;
+  width: 2rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.get_loc{
+  width:15%;
+  height: 100%;
+  background-color:#f8fafd;
+  text-align: center;
+}
+.get_loc image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-top:5rpx;
+}
+.get_loc view{
+  font-size: 16rpx;
+  color: gray;
+  margin-top: -2rpx;
+}
+
+.proof{
+  width: 100%;
+      background: white;
+      display: flex;
+      overflow: hidden;
+      border-radius: 10rpx;
+      margin-bottom: 40rpx;
+      flex-direction: column;
+}
+
+.proof_text{
+  font-size: 28rpx;
+  padding-top:20rpx;
+}
+.proof_title{
+  padding-left:20rpx;
+  color: #aaaaab;
+}
+.proof_example{
+  position: absolute;
+  right:60rpx;
+  color:rgb(87,135,242);
+}
+
+/*低端合作*/
+.block_flex{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+}
+.constitute {
+  /*width: 100%;
+  height: 70%;*/
+  text-align: center;
+  width:150rpx;
+  height:130rpx;
+  margin-top:20rpx;
+  /*margin: 30rpx 50rpx 0 50rpx;*/
+  background-color:rgb(248,250,255);
+}
+.constitute image {
+  margin: auto 0rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+}
+.constitute view{
+  font-size: 20rpx;
+  margin-top: -2rpx;
+}
+
+.container button{
+      width: 500rpx;
+      background: rgb(93, 140, 241);
+      color: #fff;
+      border-radius: 5rpx;
+      letter-spacing: 4rpx;
+      border: none;
+      text-align: center;
+      font-weight: 1000;
+}
+
+/*步骤三*/
+.c_text{
+  width:100%;
+  color:rgb(87,135,242);
+  padding:30rpx 80rpx 50rpx;
+}
+.c_text_title{
+  font-size: 80rpx;
+  text-align: center;
+  font-weight: 1000;
+  display: flex;
+}
+.c_text_des{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+.c_card{
+  height: 500rpx;
+  background-color: rgb(248,250,255);
+  margin: 0 80rpx 40rpx;
+}
+.c_finish{
+  width: 100%;
+  vertical-align: center;
+}
+.c_finish button{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  color:white;
+  background-color:rgb(87,135,242);
+  padding:27rpx;
+}
+

@@ -1,0 +1,224 @@
+/* pages/mine/mine.wxss */
+
+.container {
+  padding: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  box-sizing: border-box;
+  background: rgb(235, 241, 255);
+  box-shadow: 0 30rpx 20rpx rgb(240, 240, 240);
+}
+
+.block {
+  width: 100%;
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+.block_mine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.block_img {
+  margin-top: 50rpx;
+  margin-left: 50rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.block_change {
+  height: 50rpx;
+  width: 200rpx;
+  border-radius: 20rpx;
+  background-color: rgb(242, 247, 255);
+  margin-top: 150rpx;
+}
+
+.block_text {
+  text-align: center;
+  color: rgb(87, 135, 242);
+  flex-direction: column;
+  display: flex;
+  font-size: 24rpx;
+  padding-top: 8rpx;
+  font-weight: 1000;
+}
+
+.block_name {
+  font-size: 36rpx;
+  padding: 65rpx;
+  color: rgb(87, 135, 242);
+  font-weight: 1000;
+}
+
+/*低端合作*/
+
+.block_flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+}
+
+.block_fuc {
+  display: flex;
+  flex-direction: column;
+}
+
+.constitute {
+  background-color: rgb(242, 247, 255);
+  display: flex;
+}
+
+.constitute image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+.block_fuc view {
+  font-size: 20rpx;
+  margin-top: 15rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  color: rgb(87, 135, 242);
+  font-weight: 1000;
+}
+
+.constitute text {
+  color: rgb(252, 122, 77);
+  font-size: 48rpx;
+  margin-top: 16rpx;
+  margin-right: 20rpx;
+  font-weight: 1000;
+}
+
+.text_title {
+  font-size: 36rpx;
+  color: rgb(87, 135, 242);
+  font-weight: 1000;
+  margin-right: 66%;
+  margin-bottom: 20rpx;
+}
+
+/*list*/
+
+.list_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin-top: 300rpx;
+  background-color: rgb(213, 226, 253);
+  flex-direction: column;
+}
+
+.list_poster {
+  padding: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.list_content {
+  background-color: white;
+  height: 180rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+
+.list_right {
+  position: absolute;
+  height: 200rpx;
+  left: 180rpx;
+  width: calc(100% - 200rpx);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list_word {
+  padding-top: 37rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.list_title_all {
+  display: flex;
+}
+
+.list_title {
+  width: 100%;
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
+}
+
+.list_title_after {
+  width: 100%;
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
+  margin-right: -160rpx;
+  color: rgb(252, 122, 77);
+  font-weight: 1000;
+}
+
+.list_summary_all {
+  display: flex;
+}
+
+.list_summary {
+  width: 100%;
+  font-size: 20rpx;
+  letter-spacing: 3rpx;
+  color: rgb(129, 129, 129);
+}
+
+.list_summary_after {
+  width: 100%;
+  font-size: 20rpx;
+  letter-spacing: 3rpx;
+  color: rgb(252, 122, 77);
+  margin-right: -300rpx;
+}
+
+.list_between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 15rpx;
+}
+
+.list_time {
+  font-size: 22rpx;
+  letter-spacing: 2rpx;
+  color: rgb(129, 129, 129);
+  padding-left: 207rpx;
+  margin-top: 20rpx;
+}
+
+.list_line {
+  height: 5rpx;
+  width: 100%;
+  background-color: gray;
+}
